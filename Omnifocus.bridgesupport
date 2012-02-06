@@ -1,0 +1,439 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='1.0'>
+<enum name='omnifocusIntervalUnitDay' value='1178814820'/>
+<enum name='omnifocusIntervalUnitHour' value='1178814792'/>
+<enum name='omnifocusIntervalUnitMinute' value='1178814797'/>
+<enum name='omnifocusIntervalUnitMonth' value='1178814829'/>
+<enum name='omnifocusIntervalUnitWeek' value='1178814839'/>
+<enum name='omnifocusIntervalUnitYear' value='1178814841'/>
+<enum name='omnifocusLocationTriggerNotifyWhenArriving' value='1281454710'/>
+<enum name='omnifocusLocationTriggerNotifyWhenLeaving' value='1282172278'/>
+<enum name='omnifocusPrintingErrorHandlingDetailed' value='1819763828'/>
+<enum name='omnifocusPrintingErrorHandlingStandard' value='1819767668'/>
+<enum name='omnifocusProjectStatusActive' value='1178816609'/>
+<enum name='omnifocusProjectStatusDone' value='1178816612'/>
+<enum name='omnifocusProjectStatusDropped' value='1178816580'/>
+<enum name='omnifocusProjectStatusOnHold' value='1178816616'/>
+<enum name='omnifocusSaveOptionsAsk' value='1634954016'/>
+<enum name='omnifocusSaveOptionsNo' value='1852776480'/>
+<enum name='omnifocusSaveOptionsYes' value='2036691744'/>
+<class name='omnifocusApplication'>
+<method selector='exists:'>
+<retval type='B'/>
+</method>
+<method selector='frontmost'>
+<retval type='B'/>
+</method>
+<method selector='open:usingCache:repairInPlace:upgradeInPlace:'>
+<arg type='B' index='1'/>
+<arg type='B' index='2'/>
+<arg type='B' index='3'/>
+</method>
+<method selector='parseTasksWithTransportText:asSingleTask:'>
+<arg type='B' index='1'/>
+</method>
+<method selector='print:withProperties:printDialog:'>
+<arg type='B' index='2'/>
+</method>
+<method selector='select:extending:'>
+<arg type='B' index='1'/>
+</method>
+</class>
+<class name='omnifocusAttribute'>
+<method selector='archiveIn:compression:summaries:usingCache:'>
+<arg type='B' index='1'/>
+<arg type='B' index='2'/>
+<arg type='B' index='3'/>
+</method>
+<method selector='printWithProperties:printDialog:'>
+<arg type='B' index='1'/>
+</method>
+<method selector='saveIn:as:compression:'>
+<arg type='B' index='2'/>
+</method>
+<method selector='selectExtending:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='omnifocusContext'>
+<method selector='allowsNextAction'>
+<retval type='B'/>
+</method>
+<method selector='archiveIn:compression:summaries:usingCache:'>
+<arg type='B' index='1'/>
+<arg type='B' index='2'/>
+<arg type='B' index='3'/>
+</method>
+<method selector='effectivelyHidden'>
+<retval type='B'/>
+</method>
+<method selector='hidden'>
+<retval type='B'/>
+</method>
+<method selector='printWithProperties:printDialog:'>
+<arg type='B' index='1'/>
+</method>
+<method selector='saveIn:as:compression:'>
+<arg type='B' index='2'/>
+</method>
+<method selector='selectExtending:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setAllowsNextAction:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setHidden:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='omnifocusDocument'>
+<method selector='archiveIn:compression:summaries:usingCache:'>
+<arg type='B' index='1'/>
+<arg type='B' index='2'/>
+<arg type='B' index='3'/>
+</method>
+<method selector='canRedo'>
+<retval type='B'/>
+</method>
+<method selector='canUndo'>
+<retval type='B'/>
+</method>
+<method selector='compressesTransactions'>
+<retval type='B'/>
+</method>
+<method selector='includesSummaries'>
+<retval type='B'/>
+</method>
+<method selector='modified'>
+<retval type='B'/>
+</method>
+<method selector='printWithProperties:printDialog:'>
+<arg type='B' index='1'/>
+</method>
+<method selector='saveIn:as:compression:'>
+<arg type='B' index='2'/>
+</method>
+<method selector='selectExtending:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setCompressesTransactions:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setIncludesSummaries:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setWillAutosave:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='syncing'>
+<retval type='B'/>
+</method>
+<method selector='willAutosave'>
+<retval type='B'/>
+</method>
+</class>
+<class name='omnifocusFileAttachment'>
+<method selector='embedded'>
+<retval type='B'/>
+</method>
+</class>
+<class name='omnifocusFocusSections'>
+<method selector='archiveIn:compression:summaries:usingCache:'>
+<arg type='B' index='1'/>
+<arg type='B' index='2'/>
+<arg type='B' index='3'/>
+</method>
+<method selector='printWithProperties:printDialog:'>
+<arg type='B' index='1'/>
+</method>
+<method selector='saveIn:as:compression:'>
+<arg type='B' index='2'/>
+</method>
+<method selector='selectExtending:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='omnifocusFolder'>
+<method selector='effectivelyHidden'>
+<retval type='B'/>
+</method>
+<method selector='hidden'>
+<retval type='B'/>
+</method>
+<method selector='setHidden:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='omnifocusPerspective'>
+<method selector='archiveIn:compression:summaries:usingCache:'>
+<arg type='B' index='1'/>
+<arg type='B' index='2'/>
+<arg type='B' index='3'/>
+</method>
+<method selector='printWithProperties:printDialog:'>
+<arg type='B' index='1'/>
+</method>
+<method selector='saveIn:as:compression:'>
+<arg type='B' index='2'/>
+</method>
+<method selector='selectExtending:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='omnifocusPreference'>
+<method selector='archiveIn:compression:summaries:usingCache:'>
+<arg type='B' index='1'/>
+<arg type='B' index='2'/>
+<arg type='B' index='3'/>
+</method>
+<method selector='printWithProperties:printDialog:'>
+<arg type='B' index='1'/>
+</method>
+<method selector='saveIn:as:compression:'>
+<arg type='B' index='2'/>
+</method>
+<method selector='selectExtending:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='omnifocusProject'>
+<method selector='blocked'>
+<retval type='B'/>
+</method>
+<method selector='completed'>
+<retval type='B'/>
+</method>
+<method selector='completedByChildren'>
+<retval type='B'/>
+</method>
+<method selector='defaultSingletonActionHolder'>
+<retval type='B'/>
+</method>
+<method selector='flagged'>
+<retval type='B'/>
+</method>
+<method selector='sequential'>
+<retval type='B'/>
+</method>
+<method selector='setCompleted:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setCompletedByChildren:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setDefaultSingletonActionHolder:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setFlagged:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setSequential:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setSingletonActionHolder:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='singletonActionHolder'>
+<retval type='B'/>
+</method>
+</class>
+<class name='omnifocusQuickEntryTree'>
+<method selector='visible'>
+<retval type='B'/>
+</method>
+</class>
+<class name='omnifocusRichText'>
+<method selector='archiveIn:compression:summaries:usingCache:'>
+<arg type='B' index='1'/>
+<arg type='B' index='2'/>
+<arg type='B' index='3'/>
+</method>
+<method selector='printWithProperties:printDialog:'>
+<arg type='B' index='1'/>
+</method>
+<method selector='saveIn:as:compression:'>
+<arg type='B' index='2'/>
+</method>
+<method selector='selectExtending:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='omnifocusSection'>
+<method selector='archiveIn:compression:summaries:usingCache:'>
+<arg type='B' index='1'/>
+<arg type='B' index='2'/>
+<arg type='B' index='3'/>
+</method>
+<method selector='printWithProperties:printDialog:'>
+<arg type='B' index='1'/>
+</method>
+<method selector='saveIn:as:compression:'>
+<arg type='B' index='2'/>
+</method>
+<method selector='selectExtending:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='omnifocusSetting'>
+<method selector='archiveIn:compression:summaries:usingCache:'>
+<arg type='B' index='1'/>
+<arg type='B' index='2'/>
+<arg type='B' index='3'/>
+</method>
+<method selector='printWithProperties:printDialog:'>
+<arg type='B' index='1'/>
+</method>
+<method selector='saveIn:as:compression:'>
+<arg type='B' index='2'/>
+</method>
+<method selector='selectExtending:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='omnifocusStyle'>
+<method selector='archiveIn:compression:summaries:usingCache:'>
+<arg type='B' index='1'/>
+<arg type='B' index='2'/>
+<arg type='B' index='3'/>
+</method>
+<method selector='printWithProperties:printDialog:'>
+<arg type='B' index='1'/>
+</method>
+<method selector='saveIn:as:compression:'>
+<arg type='B' index='2'/>
+</method>
+<method selector='selectExtending:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='omnifocusTask'>
+<method selector='archiveIn:compression:summaries:usingCache:'>
+<arg type='B' index='1'/>
+<arg type='B' index='2'/>
+<arg type='B' index='3'/>
+</method>
+<method selector='blocked'>
+<retval type='B'/>
+</method>
+<method selector='completed'>
+<retval type='B'/>
+</method>
+<method selector='completedByChildren'>
+<retval type='B'/>
+</method>
+<method selector='flagged'>
+<retval type='B'/>
+</method>
+<method selector='inInbox'>
+<retval type='B'/>
+</method>
+<method selector='next'>
+<retval type='B'/>
+</method>
+<method selector='printWithProperties:printDialog:'>
+<arg type='B' index='1'/>
+</method>
+<method selector='saveIn:as:compression:'>
+<arg type='B' index='2'/>
+</method>
+<method selector='selectExtending:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='sequential'>
+<retval type='B'/>
+</method>
+<method selector='setCompleted:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setCompletedByChildren:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setFlagged:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setSequential:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='omnifocusTree'>
+<method selector='archiveIn:compression:summaries:usingCache:'>
+<arg type='B' index='1'/>
+<arg type='B' index='2'/>
+<arg type='B' index='3'/>
+</method>
+<method selector='expanded'>
+<retval type='B'/>
+</method>
+<method selector='noteExpanded'>
+<retval type='B'/>
+</method>
+<method selector='printWithProperties:printDialog:'>
+<arg type='B' index='1'/>
+</method>
+<method selector='saveIn:as:compression:'>
+<arg type='B' index='2'/>
+</method>
+<method selector='selectExtending:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='selected'>
+<retval type='B'/>
+</method>
+<method selector='setExpanded:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setNoteExpanded:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setSelected:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='omnifocusWindow'>
+<method selector='archiveIn:compression:summaries:usingCache:'>
+<arg type='B' index='1'/>
+<arg type='B' index='2'/>
+<arg type='B' index='3'/>
+</method>
+<method selector='closeable'>
+<retval type='B'/>
+</method>
+<method selector='minimizable'>
+<retval type='B'/>
+</method>
+<method selector='minimized'>
+<retval type='B'/>
+</method>
+<method selector='printWithProperties:printDialog:'>
+<arg type='B' index='1'/>
+</method>
+<method selector='resizable'>
+<retval type='B'/>
+</method>
+<method selector='saveIn:as:compression:'>
+<arg type='B' index='2'/>
+</method>
+<method selector='selectExtending:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setMinimized:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setVisible:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setZoomed:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='visible'>
+<retval type='B'/>
+</method>
+<method selector='zoomable'>
+<retval type='B'/>
+</method>
+<method selector='zoomed'>
+<retval type='B'/>
+</method>
+</class>
+</signatures>
