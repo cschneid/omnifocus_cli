@@ -15,6 +15,10 @@ class Omnifocus
     @omnifocus = SBApplication.applicationWithBundleIdentifier(bundle_id)
   end
 
+  def create_task(arg, as_single_task=false)
+    @omnifocus.parseTasksWithTransportText(arg, asSingleTask: as_single_task)
+  end
+
   def document
     @omnifocus.defaultDocument
   end
@@ -45,6 +49,10 @@ module OmnifocusCLI
 
     def name
       @sbTask.name
+    end
+
+    def note
+      @sbTask.note
     end
   end
 
