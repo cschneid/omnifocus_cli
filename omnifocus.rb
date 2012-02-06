@@ -175,4 +175,5 @@ end
 
 
 puts OmnifocusCLI::Presenters::NestedPresenter.new.display(:contexts)
+puts OmnifocusCLI::Presenters::NestedPresenter.new.display(:folders)
 
