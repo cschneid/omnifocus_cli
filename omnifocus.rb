@@ -1,3 +1,6 @@
+require "rubygems"
+require 'trollop'
+
 framework 'Foundation'
 framework 'ScriptingBridge'
 
@@ -173,7 +176,21 @@ module OmnifocusCLI
   end
 end
 
+opts = Trollop::options do
+  version "0.01 (c) 2012 Chris Schneider"
+  banner <<-EOS
+Command Line Interface to Omnifocus
 
-puts OmnifocusCLI::Presenters::NestedPresenter.new.display(:contexts)
-puts OmnifocusCLI::Presenters::NestedPresenter.new.display(:folders)
+Usage:
+       omnifocus.rb [options]
+
+where [options] are:
+EOS
+
+  opt :contexts, "Display Contexts"
+  opt :folders,  "Display Folders"
+end
+
+puts OmnifocusCLI::Presenters::NestedPresenter.new.display(:contexts) if opts[:contexts]
+puts OmnifocusCLI::Presenters::NestedPresenter.new.display(:folders)  if opts[:folders]
 
